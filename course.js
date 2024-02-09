@@ -82,3 +82,58 @@ console.log(message);
 const username = "brad";
 const returnMessage = username === "jack" || username === "john" ? "admin" : "user";
 console.log(returnMessage);
+
+
+
+//switch case - rare, takes too much space, you need to cover every single case, you need to write break, and you dont write dif conditions for every case, you are just checking a single property for different values
+
+const showDay = (day) => {
+    switch (day) {
+        case "monday":
+            console.log("monday");
+            break;
+        case "tuesday":
+            console.log("tuesday");
+            break;
+        default:
+            console.log("not found");
+    }
+};
+
+showDay("tuesday");
+
+
+
+// objects
+const user = {
+    firstName: 'Jack',
+    lastName: 'Sparrow',
+    age: 30,
+};
+
+user.role = 'Captain';
+delete user.age;
+console.log(user)
+console.log(user.age)
+
+//string concatenation
+
+const fullName = user.firstName + " " + user.lastName;
+console.log(fullName);
+
+//task
+const userObject = {
+    name: "Anna",
+    role: "admin",
+    age: 18,
+
+}
+const access = (userObject) => {
+    if (userObject.role === "admin"){
+        console.log("Give access")
+    }
+};
+access(userObject);
+
+
+
