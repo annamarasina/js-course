@@ -1,10 +1,13 @@
 console.log(1+1);
+//variables const, let var
 const first = 1;
 let second = first+first;
 
 second = 3;
 console.log(first + second);
 
+
+//functions
 const one = 1;
 const two = 2;
 const three = 3;
@@ -31,7 +34,7 @@ const resultPar = sumFiveParameters(1,2,3,4,5);
 console.log(resultPar);
 
 
-
+// if else condition
 const falsy = false;
 const truthy = true;
 
@@ -49,12 +52,33 @@ else {
 //task//
 const ageOfPerson = 40;
 if (ageOfPerson < 20) {
-    console.log(young);
-} else if (ageOfPerson < 80){
+    console.log("young");
+} else if (ageOfPerson > 20 && ageOfPerson < 80){
     console.log("grown up");
 } else {
-    consol.log(old);
+    console.log("old");
 }
 
 
+const getAgeMessage = (ageOfPerson) => {
+    if (ageOfPerson < 20) {
+        console.log("young");
+    } else if (ageOfPerson > 20 && ageOfPerson < 80){
+        console.log("grown up");
+    } else {
+        console.log("old");
+    }
+};
 
+getAgeMessage(85);
+
+
+//ternary operator = condition ? answer if true : answer if false
+const age = 45;
+const message = age > 20 ? "old" : "young";
+console.log(message);
+
+//task
+const username = "brad";
+const returnMessage = username === "jack" || username === "john" ? "admin" : "user";
+console.log(returnMessage);
