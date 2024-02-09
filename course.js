@@ -137,3 +137,29 @@ access(userObject);
 
 
 
+//array
+const arr = [1, 2, 3, 4, 5];
+
+const names =["john","jack", "mike"];
+
+names.push("bob");
+names.splice(2,2);
+
+console.log(names);
+
+const users = [
+    {name: "jack", age: 20},
+    {name: "john", age:25},
+    {name: "mike", age:30},
+];
+console.log(users[0].name);
+
+//task
+const arrayOfObjects = [
+    {title: "dog", likes: 980},
+    {title: "tree", likes: 68},
+    {title: "friends", likes: 34},
+];
+
+arrayOfObjects.push({title:"flowers", likes: 107});
+console.log(arrayOfObjects);
