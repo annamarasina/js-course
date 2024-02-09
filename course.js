@@ -22,14 +22,39 @@ const result = sumTwoNumbers(1,2);
 const secondResult = sumTwoNumbers(5, 4);
 console.log(result, secondResult);
 
+
+//task//
 const sumFiveParameters = (firstPar, secondPar, thirdPar, fourthPar, fifthPar) => {
     return firstPar + secondPar + thirdPar + fourthPar + fifthPar;
 };
 const resultPar = sumFiveParameters(1,2,3,4,5);
 console.log(resultPar);
 
-const sumFiveNumbers = (firstNumber, secondNumber, thirdNumber, fourthNumber, fifthNumber) => {
-    return firstNumber + secondNumber + thirdNumber + fourthNumber + fifthNumber;
-    };
-const resultFiveNumbers = sumFiveNumbers(1,2,3,4,5);
-console.log(resultNumbers);
+
+
+const falsy = false;
+const truthy = true;
+
+if (10<4) {
+    console.log("it is true");
+} else if (15<10) {
+    console.log("it is for sure true");
+}
+else {
+    console.log("it is false");
+}
+
+
+
+//task//
+const ageOfPerson = 40;
+if (ageOfPerson < 20) {
+    console.log(young);
+} else if (ageOfPerson < 80){
+    console.log("grown up");
+} else {
+    consol.log(old);
+}
+
+
+
