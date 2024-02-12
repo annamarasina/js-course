@@ -49,20 +49,35 @@ console.log(emptyArray);
 
 
 //while loop
-let i =0;
-while (i<10) {
-    console.log(i);
-    i +=2;
-};
+//let i =0;
+//while (i<10) {
+//    console.log(i);
+  //  i +=2;
+//};
 
 //task
+let i = 0;
 const emptyWhileArray = [];
 while (i<10) {
     emptyWhileArray.push({
         id: i,
         name: "hello_" + i,
-        
     });
-    i += 3;
+    i +=3;
 };
 console.log(emptyWhileArray);
+
+//do while loop - rarely used
+//let i = 0;
+//const emptyWhileArray = [];
+//do {
+ //   emptyWhileArray.push({
+  //      id: i,
+//        name: "hello_" + i,
+//    });
+//    i +=3;
+//}
+//while (i<10);
+//console.log(emptyWhileArray);
+
+//array map
