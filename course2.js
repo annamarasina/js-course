@@ -79,5 +79,3 @@ console.log(emptyWhileArray);
 //}
 //while (i<10);
 //console.log(emptyWhileArray);
-
-//array map
