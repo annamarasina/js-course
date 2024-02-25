@@ -59,7 +59,7 @@ if (ageOfPerson < 20) {
     console.log("old");
 }
 
-
+//arrow function
 const getAgeMessage = (ageOfPerson) => {
     if (ageOfPerson < 20) {
         console.log("young");
