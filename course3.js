@@ -87,3 +87,57 @@ const usersFilterTask = [
 
 const olderThan30 = usersFilterTask.filter((user) => user.age > 30);
 console.log(olderThan30);
+
+class User {
+    constructor(firstName, surName) {
+        console.log('constructor', firstName, surName)
+        this.firstName = firstName;
+        this.surName = surName;
+    }
+
+    getFullName() {
+        return this.firstName + " " + this.surName;
+    }
+}
+
+class Admin extends User {
+    constructor(firstName, surName, role) {
+    super(firstName,surName);
+    this.role = role;
+ }
+ getRole() {
+    return this.role;
+}}
+
+
+const user = new User("Jack", "Sparrow");
+const user2 = new User("Foo", "Bar");
+
+const admin = new Admin("Admin name", "Admin surname", "superadmin")
+console.log(user.getFullName(), user2.getFullName(), admin.getRole());
+
+class Article{
+    constructor(ID, title) {
+        console.log(ID, title)
+        this.ID = ID;
+        this.title = title;
+    }
+
+getTitle() {
+    return this.title;
+}}
+
+const article1 = new Article("1", "JS");
+console.log(article1);
+
+class News extends Article {
+    constructor(ID, title, source){
+        super(ID, title);
+        this.source = source ;   
+    }
+    getSource() {
+        return(this.source);    
+    }
+}
+const article2 = new News("2", "JS", "YouTube");
+console.log(article2);
